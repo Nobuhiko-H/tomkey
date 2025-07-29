@@ -14,37 +14,15 @@
     };
 
     macros {
-        Ctrl_opt_left: Ctrl_opt_left {
+        CTRL_OPT_LEFT: CTRL_OPT_LEFT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp LALT &kp LEFT_ARROW>,
+                <&kp LCTRL &kp LALT &kp LEFT>,
                 <&macro_release>;
 
             label = "CTRL_OPT_LEFT";
-        };
-
-        ctrl_opt_enter: ctrl_opt_enter {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL &kp LALT &kp ENTER>,
-                <&macro_release>;
-
-            label = "CTRL_OPT_ENTER";
-        };
-
-        ctrl_opt_right: ctrl_opt_right {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL &kp LALT &kp RIGHT>,
-                <&macro_release>;
-
-            label = "CTRL_OPT_RIGHT";
         };
     };
 
@@ -80,10 +58,10 @@
 
         ARROW {
             bindings = <
-&none      &none      &none      &none      &none                                     &none  &none           &kp UP_ARROW     &none            &none
-&kp LG(A)  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)       &kp LG(LC(V))      &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &none
-&kp LC(L)  &kp LC(T)  &kp LC(H)  &kp LC(R)  &none           &kp LG(LS(B))      &none  &none  &Ctrl_opt_left  &ctrl_opt_enter  &ctrl_opt_right  &none
-&kp LC(C)  &kp LC(B)  &kp LC(V)  &kp LC(M)  &kp LEFT_SHIFT  &none              &none  &none                                                    &none
+&none      &none      &none      &none      &none                                     &none  &none           &kp UP_ARROW    &none            &none
+&kp LG(A)  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)       &kp LG(LC(V))      &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&kp LC(L)  &kp LC(T)  &kp LC(H)  &kp LC(R)  &none           &kp LG(LS(B))      &none  &none  &CTRL_OPT_LEFT  &none           &none            &none
+&kp LC(C)  &kp LC(B)  &kp LC(V)  &kp LC(M)  &kp LEFT_SHIFT  &none              &none  &none                                                   &none
             >;
         };
 
