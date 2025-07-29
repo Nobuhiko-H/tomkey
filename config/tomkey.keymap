@@ -17,7 +17,10 @@
         Ctrl_opt_left: Ctrl_opt_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LCTRL &kp LALT &kp LEFT_ARROW>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LALT &kp LEFT_ARROW>,
+                <&macro_release>;
 
             label = "CTRL_OPT_LEFT";
         };
@@ -25,7 +28,10 @@
         ctrl_opt_enter: ctrl_opt_enter {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LCTRL &kp LALT &kp ENTER>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LALT &kp ENTER>,
+                <&macro_release>;
 
             label = "CTRL_OPT_ENTER";
         };
@@ -33,7 +39,10 @@
         ctrl_opt_right: ctrl_opt_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LCTRL &kp LALT &kp RIGHT>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LALT &kp RIGHT>,
+                <&macro_release>;
 
             label = "CTRL_OPT_RIGHT";
         };
