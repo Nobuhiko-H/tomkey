@@ -53,10 +53,10 @@
 
         MOUSE {
             bindings = <
-&trans     &trans        &trans            &trans          &trans                      &trans  &trans    &trans    &trans    &trans
-&trans     &trans        &trans            &trans          &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans     &trans        &trans            &trans          &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans  &trans      &trans  &mo 3                                 &trans
+&trans     &trans        &trans            &trans          &trans                      &trans  &trans    &trans    &trans  &trans
+&trans     &trans        &trans            &trans          &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &none   &trans
+&trans     &trans        &trans            &trans          &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans  &trans      &trans  &mo 3                               &trans
             >;
         };
 
@@ -71,19 +71,19 @@
 
         ARROW {
             bindings = <
-&none      &none      &none      &none      &none                                 &trans  &none           &kp UP_ARROW     &none            &none
-&kp LG(A)  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LC(V))      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &none
-&kp LC(L)  &kp LC(T)  &kp LC(H)  &kp LC(R)  &none      &kp LC(LG(B))      &trans  &trans  &Ctrl_opt_left  &ctrl_opt_enter  &ctrl_opt_right  &none
-&none      &kp LC(B)  &kp LC(V)  &none      &trans     &trans             &trans  &trans                                                    &trans
+&none      &none      &none      &none      &none                                &none  &none           &kp UP_ARROW     &none            &none
+&kp LG(A)  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LC(V))      &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &none
+&kp LC(L)  &kp LC(T)  &kp LC(H)  &kp LC(R)  &none      &kp LG(LS(B))      &none  &none  &Ctrl_opt_left  &ctrl_opt_enter  &ctrl_opt_right  &none
+&none      &kp LC(B)  &kp LC(V)  &none      &none      &none              &none  &none                                                    &none
             >;
         };
 
         NUM {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                      &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH              &kp DOLLAR             &kp LS(N5)
-&kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &none       &trans  &kp LS(N7)       &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
-&none         &none         &none         &none         &none         &trans      &trans  &kp SLASH        &kp QUESTION       &kp UNDERSCORE        &kp LS(LBKT)           &kp LS(RBKT)
-&trans        &trans        &trans        &trans        &trans        &trans      &trans  &none                                                                            &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5                        &kp LS(N5)    &kp DOUBLE_QUOTES  &kp HASH              &kp DOLLAR             &none
+&kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &kp NUMBER_0  &none      &kp SLASH  &kp EXCL      &kp QUESTION       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
+&none         &none         &none         &none           &none         &none      &none      &kp LS(LBKT)  &kp LS(RBKT)       &kp SINGLE_QUOTE      &kp LS(N7)             &none
+&none         &none         &none         &kp LEFT_SHIFT  &none         &none      &none      &none                                                                         &trans
             >;
         };
 
